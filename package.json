@@ -1,0 +1,15 @@
+{
+  "name": "my-discord-bot",
+  "version": "1.0.0",
+  "description": "My Rivescript Discord bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js",
+  },
+  "author": "YourNameHere",
+  "license": "ISC",
+  "dependencies": {
+    "discordie": "^0.8.1",
+    "rivescript": "6.2.2"
+  }
+}
