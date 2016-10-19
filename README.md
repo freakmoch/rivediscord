@@ -34,10 +34,12 @@ I suck at explaining, but heres a rundown how to get this bot working. I am goin
 1.  Create a bot folder on your desktop. just `/bot/` is fine
 2.  copy in the `package.json`, `main.js`, and **your** `.rive` file to the `/bot/` directory
     (If you don't have one, nab the sample off the rivescript site.)
-3.  Pull down your **Token** and paste it into line 18 / the `token: 'tokenhere'` line and SAVE.
-4.  Open up your terminal in the `bot` folder. If you're using windows, cd to `%HOMEPATH%/Desktop/bot`
-5.  Install the discordie dependency by typing `npm install --save discordie`
-6.  Install the rivescript dependency by typing `npm install --save discordie`
+3.  Open `main.js` and admire its beauty.
+3.  Pull down your **Token** and paste it into *line 18* / the `token: 'tokenhere'` line.
+5.  Go to *line 24* and replace `yourrivefilehere.rive` with your actual rive file. Save the file
+6.  Open up your terminal in the `bot` folder. If you're using windows, cd to `%HOMEPATH%/Desktop/bot`
+7.  Install the discordie dependency by typing `npm install --save discordie`
+8.  Install the rivescript dependency by typing `npm install --save discordie`
 
 ### 3. Add your bot to your server
 
