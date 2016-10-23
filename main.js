@@ -60,17 +60,16 @@ client.Dispatcher.on(DisEvents.MESSAGE_CREATE, e => { // when someone makes a me
 	
 	var usrSentMsg = e.message.content; // pull message to variable
 
-	function riveMsg(replay, type) { 
+	function riveMsg(triggr, type) { 
 	// A function I wrote to make calling triggers easier
 	// usage: riveMsg("hello", 0) will print a message using the +hello rive trigger
-		this.replay = replay;
-		this.type = type;
-		console.log(this.replay);
-		if(type == 0) { // just prints a message
-			return e.message.channel.sendMessage(talkback.reply("local-user", replay)); 
+		this.triggr = triggr;
+		this.type = rivType;
+		if(rivType == 0) { // just prints a message
+			return e.message.channel.sendMessage(talkback.reply("local-user", triggr)); 
 		} 
-		else if(type == 1) { // prints a message with a cherry blossom
-			return e.message.channel.sendMessage(":cherry_blossom: " + talkback.reply("local-user", replay)); 
+		else if(rivType == 1) { // prints a message with a cherry blossom
+			return e.message.channel.sendMessage(":cherry_blossom: " + talkback.reply("local-user", triggr)); 
 		}
 	}
 	
