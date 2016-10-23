@@ -57,19 +57,35 @@ client.Dispatcher.on(Discordie.Events.DISCONNECTED, (e) => {
 //////////////////////////////////////////////
 
 client.Dispatcher.on(DisEvents.MESSAGE_CREATE, e => { // when someone makes a message
+	
+	var usrSentMsg = e.message.content; // pull message to variable
 
+	function riveMsg(replay, type) { 
+	// A function I wrote to make calling triggers easier
+	// usage: riveMsg("hello", 0) will print a message using the +hello rive trigger
+		this.replay = replay;
+		this.type = type;
+		console.log(this.replay);
+		if(type == 0) { // just prints a message
+			return e.message.channel.sendMessage(talkback.reply("local-user", replay)); 
+		} 
+		else if(type == 1) { // prints a message with a cherry blossom
+			return e.message.channel.sendMessage(":cherry_blossom: " + talkback.reply("local-user", replay)); 
+		}
+	}
+	
+	
      	if(e.message.content.includes(botName) == true) {  // if it contains the bot's name,
 
-		var talkToMe = e.message.content; // pull message to variable
-		var talkToMeToo = talkToMeToo.replace(botName,'');  // remove bot name from string
-     		talkToMeToo = talkToMe.replace(/[^a-zA-Z0-9 ]/g, "").toLowerCase(); //remove symbols
+		var riveReader = usrSentMsg.replace(botName,'');  // remove bot name from string
+     		riveReader = riveReader.replace(/[^a-zA-Z0-9 ]/g, "").toLowerCase(); //remove symbols
 
-		e.message.channel.sendMessage(talkback.reply("local-user", talkToMeToo)); // proccess with local-user name.
+		e.message.channel.sendMessage(talkback.reply("local-user", riveReader)); // proccess with local-user name.
 
 		// for debugging
-		console.log('-- Hey, someone talked to me! They said: ' + talkToMe);
-		console.log('-- I saw: ' + talkToMeToo);
-    		console.log('-- I said: ' + talkback.reply("local-user", talkToMeToo));
+		console.log('-- Hey, someone talked to me! They said: ' + usrSentMsg);
+		console.log('-- I saw: ' + riveReader);
+    		console.log('-- I said: ' + talkback.reply("local-user", riveReader));
 
      	}
 
