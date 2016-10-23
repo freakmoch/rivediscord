@@ -75,7 +75,7 @@ client.Dispatcher.on(DisEvents.MESSAGE_CREATE, e => { // when someone makes a me
 	}
 	
 	
-     	if(e.message.content.includes(botName) == true) {  // if it contains the bot's name,
+     	if(usrSentMsg.includes(botName) == true) {  // if it contains the bot's name,
 
 		var riveReader = usrSentMsg.replace(botName,'');  // remove bot name from string
      		riveReader = riveReader.replace(/[^a-zA-Z0-9 ]/g, "").toLowerCase(); //remove symbols
