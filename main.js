@@ -80,7 +80,7 @@ client.Dispatcher.on(DisEvents.MESSAGE_CREATE, e => { // when someone makes a me
 		var riveReader = usrSentMsg.replace(botName,'');  // remove bot name from string
      		riveReader = riveReader.replace(/[^a-zA-Z0-9 ]/g, "").toLowerCase(); //remove symbols
 
-		e.message.channel.sendMessage(talkback.reply("local-user", riveReader)); // proccess with local-user name.
+		riveMsg(riveReader, 0); // proccess
 
 		// for debugging
 		console.log('-- Hey, someone talked to me! They said: ' + usrSentMsg);
