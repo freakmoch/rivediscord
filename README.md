@@ -6,13 +6,6 @@ I don't know if anyones already made a repository for this. But heres mine.
 
 **If you need any help, please check out the [Wiki](https://github.com/freakmoch/rivediscord/wiki)**
 
-## Requirements
-
-- Latest Node.js installed
-- Discord, of course.
-- Basic knowlege how to use cmd/a terminal
-- Basic knowledge of Javascript and Rivescript
-
 ## Links
 
 - Node.js: https://nodejs.org/en/
