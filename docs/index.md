@@ -1,3 +1,5 @@
+# Wiki Mickey
+
 Welcome to the rivediscord wiki!
 
 I'll put something nice here someday.
