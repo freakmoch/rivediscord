@@ -2,8 +2,8 @@ Welcome to the rivediscord wiki!
 
 I'll put something nice here someday.
 
-##Pages
+## Pages
 
-- [Setting up a bot](https://github.com/freakmoch/rivediscord/wiki/Setting-Up-a-Bot)
-- [riveMsg() help](https://github.com/freakmoch/rivediscord/wiki/riveMsg%28%29)
+- [Setting up a bot](http://seabird.me/rivediscord/bot.html)
+- [riveMsg() help](http://seabird.me/rivediscord/rivemsg.html)
 - [Common errors](https://github.com/freakmoch/rivediscord/wiki/Common-errors)
