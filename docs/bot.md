@@ -1,4 +1,4 @@
-#How to Set Up A Bot
+# How to Set Up A Bot
 I suck at explaining, but heres a rundown how to get this bot working. I am going to make this *extremely* simple, because i recfuse to assume you know **anything** other than the requirements.
 
 ## 1. Setting up a bot
