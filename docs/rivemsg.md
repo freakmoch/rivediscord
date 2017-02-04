@@ -1,4 +1,4 @@
-#riveMsg()
+# riveMsg()
 
 This version includes a cute little feature - the `riveMsg(trigger, type)` function. This lets you call from a rivescript trigger (the little + sign messages) for anything -- not just for chatting.
 
