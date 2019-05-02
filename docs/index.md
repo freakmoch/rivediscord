@@ -22,8 +22,8 @@ I don't know if anyones already made a repository for this. But heres mine.
 
 ## Pages
 
-- [Setting up a bot](http://seabird.me/rivediscord/bot.html)
-- [riveMsg() help](http://seabird.me/rivediscord/rivemsg.html)
+- [Setting up a bot](bot.html)
+- [riveMsg() help](rivemsg.html)
 - [Common errors](https://github.com/freakmoch/rivediscord/wiki/Common-errors)
 
 
